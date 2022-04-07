@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+
+  <title>第18組 原住民網站</title>
+  <meta charset="utf-8">
+  <meta name="author" content="裴鼎軒, 李柏村, 吳佳琪">
+  <meta name="keywords" content="原住民文化介紹, 原住民年代表, 原住民小遊戲">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.eeyellow.Timeline.css">
+  <link rel="stylesheet" type="text/css" href="http://www.jqueryscript.net/css/jquerysctipttop.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+<style>
+.back-to-top {
+    display:none;
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+    text-decoration:none;
+    color:#ffffff;
+}
+
+/*人物*/
+.item-img {
+  width: 100%;
+}
+
+#item-table1 p {
+  opacity: 0;
+}
+
+#item-table1:hover p {
+  opacity: 1;
+}
+
+#item-table2 p {
+  opacity: 0;
+}
+
+#item-table2:hover p {
+  opacity: 1;
+}
+
+/*城市*/ 
+#city ul {
+  background:  #6c757d;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+#city ul li {
+  background: #343a40;
+  margin: 5px;
+  border-radius: 12px;
+}
+
+a.city1:visited {color: #ff6600;}
+a.city1:hover {color: #fff;}
+
+/*導航欄*/
+#collapsibleNavbar1 li a:hover:not(.active) {
+  background-color: #555;
+  border-radius: 12px;
+}
+
+#collapsibleNavbar li a:hover:not(.active) {
+  background-color: #555;
+  border-radius: 12px;
+}
+
+
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+        
+body{
+  font-family: 'cwTeXYen',sans-serif;
+}
+ 
+/*衣服*/
+aside {
+  position: absolute;
+  top: 2%;
+  left: .5%;
+  width: 10%;
+  height: 20%;
+  z-index: 1;
+}
+
+    
+/*輪播介紹*/
+/*先預設是隱藏*/
+.hide-in-phone1 {
+  display: none;
+}
+/*若寬度大於480px就顯示*/
+@media only screen and (min-width:480px) {
+  .hide-in-phone1 {
+    display: block;
+  }
+}
+
+.hide-in-phone2 {
+  visibility: visible;
+}
+
+@media only screen and (min-width:480px) {
+  .hide-in-phone2 {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/*輪播圖片*/
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+
+</style>
+</head>
+<a href="#" class="back-to-top">TOP</a>
+<script>
+jQuery(document).ready(function() {
+var offset = 220;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.back-to-top').fadeIn(duration);
+} else {
+jQuery('.back-to-top').fadeOut(duration);
+}
+});
+
+jQuery('.back-to-top').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+<body>
+<!--衣服-->
+  <aside>
+    <!--輪播-->
+    <div id="clothes" class="carousel slide hide-in-phone1" data-ride="carousel">
+      <!--圖片下方顯示:有多少輪播圖片&目前撥放位置-->
+      <ul class="carousel-indicators">
+        <li data-target="#clothes" data-slide-to="0" class="active"></li>
+        <li data-target="#clothes" data-slide-to="1"></li>
+        <li data-target="#clothes" data-slide-to="2"></li>
+        <li data-target="#clothes" data-slide-to="3"></li>
+        <li data-target="#clothes" data-slide-to="4"></li>
+        <li data-target="#clothes" data-slide-to="5"></li>
+        <li data-target="#clothes" data-slide-to="6"></li>
+        <li data-target="#clothes" data-slide-to="7"></li>
+        <li data-target="#clothes" data-slide-to="8"></li>
+        <li data-target="#clothes" data-slide-to="9"></li>
+        <li data-target="#clothes" data-slide-to="10"></li>
+        <li data-target="#clothes" data-slide-to="11"></li>
+        <li data-target="#clothes" data-slide-to="12"></li>
+        <li data-target="#clothes" data-slide-to="13"></li>
+        <li data-target="#clothes" data-slide-to="14"></li>
+        <li data-target="#clothes" data-slide-to="15"></li>
+      </ul>
+      <!--圖片&圖片標題-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/home/人物/阿美_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>阿美</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/泰雅族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>泰雅族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/排灣族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>排灣族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/布農族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>布農族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/雅美族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>雅美族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/鄒族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>鄒族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/邵族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>邵族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/賽德克族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>賽德克族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/噶瑪蘭族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>噶瑪蘭族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/太魯閣族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>太魯閣族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/卑南族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>卑南族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/魯凱族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>魯凱族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/撒奇萊雅族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>撒奇萊雅族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/拉阿魯哇族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>拉阿魯哇族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/賽夏族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>賽夏族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/人物/卡那卡那富族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>卡那卡那富族</p>
+          </div>
+        </div>
+        <!--左右控制-->
+        <a class="carousel-control-prev clothes" href="#clothes" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next clothes" href="#clothes" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand  hide-in-phone2" style="font-weight: bold; font-size: 20px" href="#">原住民資訊網</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar1">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../html/introducehome.html">
+            <div class="text-white" style="font-size: 20px">原住民文化</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../html/home.html">
+            <div class="text-white" style="font-size: 20px">文化年表</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../database/login.php">
+            <div class="text-white" style="font-size: 20px">小遊戲</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--輪播-->
+  <div class="container-fluid bg-dark">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- 圖片下方顯示:有多少輪播圖片&目前撥放位置 -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+        <li data-target="#demo" data-slide-to="5"></li>
+        <li data-target="#demo" data-slide-to="6"></li>
+        <li data-target="#demo" data-slide-to="7"></li>
+        <li data-target="#demo" data-slide-to="8"></li>
+        <li data-target="#demo" data-slide-to="9"></li>
+        <li data-target="#demo" data-slide-to="10"></li>
+        <li data-target="#demo" data-slide-to="11"></li>
+        <li data-target="#demo" data-slide-to="12"></li>
+        <li data-target="#demo" data-slide-to="13"></li>
+        <li data-target="#demo" data-slide-to="14"></li>
+      </ul>
+      <!--圖片&圖片標題-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/home/輪播2/1.png">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/2.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/3.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/4.png">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/5.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/6.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/7.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/8.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/9.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/10.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/11.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/12.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/13.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/14.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/home/輪播2/15.jpg">
+        </div>
+      </div>
+      <!--左右控制-->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="bg-dark">&nbsp;</div>
+   
+  <div class="container-fluid" style="margin-top:30px">
+    <table id="item-table1">
+      <tr>
+        <td><img src="../img/home/人物/阿美_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;阿美族</p></td>
+        <td><img src="../img/home/人物/泰雅族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;泰雅族</p></td>
+        <td><img src="../img/home/人物/排灣族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;排灣族</p></td>
+        <td><img src="../img/home/人物/布農族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;布農族</p></td>
+        <td><img src="../img/home/人物/雅美族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;&emsp;雅美族</p></td>
+        <td><img src="../img/home/人物/鄒族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;&emsp;鄒族</p></td>
+        <td><img src="../img/home/人物/邵族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;&emsp;邵族</p></td>
+        <td><img src="../img/home/人物/賽德克族_人物.jpg" class="item-img" /><p>&nbsp;&nbsp;&emsp;&emsp;&emsp;賽德克族</p></td>
+      </tr>
+    </table>
+  </div>
+    
+  <div class="container" style="margin-top:40px">
+    <h1>認識臺灣的原住民 :</h1>
+    <h3>Taiwan Indigenous Peoples</h3>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-2">
+        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark" style="border-radius: 12px;">
+          <a class="navbar-brand hide-in-phone2" style="font-weight: bold; font-size: 20px" href="#">族群</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Ami.html">
+                  <div class="text-white" style="font-size: 15px">阿美族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Atayal.html">
+                  <div class="text-white" style="font-size: 15px">泰雅族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Paiwan.html">
+                  <div class="text-white" style="font-size: 15px">排灣族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Bunun.html">
+                  <div class="text-white" style="font-size: 15px">布農族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Yami.html">
+                  <div class="text-white" style="font-size: 15px">達悟族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Tsou.html">
+                  <div class="text-white" style="font-size: 15px">鄒族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Thao.html">
+                  <div class="text-white" style="font-size: 15px">邵族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Seediq.html">
+                  <div class="text-white" style="font-size: 15px">賽德克族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Kavalan.html">
+                  <div class="text-white" style="font-size: 15px">噶瑪蘭族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Taroko.html">
+                  <div class="text-white" style="font-size: 15px">太魯閣族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Puyuma.html">
+                  <div class="text-white" style="font-size: 15px">卑南族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Rukai.html">
+                  <div class="text-white" style="font-size: 15px">魯凱族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Sakizaya.html">
+                  <div class="text-white" style="font-size: 15px">撒奇萊雅族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/La Aluwa.html">
+                  <div class="text-white" style="font-size: 15px">拉阿魯哇族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Saixia.html">
+                  <div class="text-white" style="font-size: 15px">賽夏族</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/16/Kanakanafu.html">
+                  <div class="text-white" style="font-size: 15px">卡那卡那富族</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-md-1"></div>
+
+      <div class="col-md-4">
+        <img src="../img/home/map1.jpg" alt="" width="340" height="650" usemap="#Map" />
+        <map name="Map">
+          <area shape="poly" coords="270,38,258,43,264,58,274,60,282,60,286,56,282,45" href="#">
+          <area shape="poly"
+            coords="267,38,247,44,241,38,222,51,228,69,242,85,251,110,228,130,220,103,202,101,200,86,207,74,209,61,198,54,218,42,225,28,232,22,250,22"
+            href="../html/MAP/Xinbei City.html">
+          <area shape="poly"
+            coords="257,46,250,47,252,63,258,73,248,87,254,104,286,87,293,75,308,72,309,60,302,48,289,44,291,54,289,63,279,64,270,62,262,58"
+            href="../html/MAP/Xinbei City.html">
+          <area shape="poly" coords="242,46,228,54,231,67,242,77,246,86,253,73" href="#">
+          <area shape="poly"
+            coords="189,52,204,69,194,84,200,107,213,110,223,136,220,150,202,137,196,118,187,111,181,112,152,88,161,71,170,62"
+            href="../html/MAP/Taoyuan City.html">
+          <area shape="poly"
+            coords="218,154,210,172,194,174,192,163,180,151,162,150,143,133,133,131,140,122,153,119,147,108,135,105,147,90,172,110,188,115,194,126,197,138"
+            href="../html/MAP/Xinzhu County.html">
+          <area shape="poly"
+            coords="192,182,188,168,174,157,158,154,141,138,125,138,104,152,101,169,92,177,108,194,137,200,140,190,162,198"
+            href="../html/MAP/Miaoli County.html">
+          <area shape="poly"
+            coords="233,185,220,183,213,181,207,175,198,181,169,199,158,201,144,196,138,203,113,201,104,196,90,181,78,192,70,222,81,237,94,242,106,246,115,238,122,229,136,226,157,219,171,211,182,210,191,219,207,220,213,215,216,202"
+            href="../html/MAP/Taizhong City.html">
+          <area shape="poly"
+            coords="209,226,194,226,181,216,133,233,122,231,122,242,114,250,90,249,82,254,89,266,89,276,97,282,100,290,101,309,102,318,113,322,127,322,135,330,142,343,165,343,173,352,172,335,185,332,200,316,200,278,203,273,214,235"
+            href="../html/MAP/Nantou County.html">
+          <area shape="poly"
+            coords="113,329,76,324,66,314,54,314,16,342,16,372,27,370,39,357,51,355,54,349,53,343,54,335,64,334,74,342"
+            href="../html/MAP/Jiayi County.html">
+          <area shape="poly"
+            coords="76,346,74,351,60,350,56,354,70,358,80,367,84,385,98,385,137,346,133,332,126,326,114,327"
+            href="../html/MAP/Jiayi County.html">
+          <area shape="poly"
+            coords="101,390,83,390,79,376,65,360,51,358,38,363,30,378,17,376,7,420,22,439,44,440,58,442,63,433,62,423,75,427,74,414,87,409"
+            href="#">
+          <area shape="poly"
+            coords="179,372,166,362,170,355,160,349,143,347,105,384,103,399,82,418,80,430,68,432,58,446,26,446,64,515,74,495,71,459,86,451,94,442,141,442,149,409,155,379"
+            href="../html/MAP/Gaoxiong City.html">
+          <area shape="poly"
+            coords="140,449,99,450,77,465,79,495,71,517,103,531,132,582,134,596,135,611,150,606,160,594,159,567,146,563,130,539,137,525,126,502,145,475,151,462"
+            href="../html/MAP/Pingtung County.html">
+          <area shape="poly"
+            coords="254,346,241,337,231,341,221,389,210,392,182,378,160,384,147,442,158,467,133,502,142,518,139,538,156,554,178,484,207,458,228,427,224,408,238,400,240,368"
+            href="../html/MAP/Taidong County.html">
+          <area shape="poly"
+            coords="215,386,173,362,178,343,205,318,205,294,205,278,214,268,213,253,218,239,213,222,222,211,234,192,244,190,254,192,266,190,276,192,285,192,271,203,273,224,266,232,271,246,263,254,266,269,257,276,253,334,243,333,230,332"
+            href="../html/MAP/Hualian County.html">
+          <area shape="poly"
+            coords="306,79,294,79,284,96,255,106,252,122,232,133,213,173,235,181,252,188,266,182,283,187,285,168,302,153,305,138,293,132,286,109,293,93,298,84"
+            href="../html/MAP/Yilan County.html">
+          <area shape="poly" coords="243,501,227,501,229,515,235,517,237,521,242,517,238,512" href="#">
+        </map>
+      </div>
+
+      <div class="col-md-1"></div>
+      
+        <div class="col-md-4" id="city">
+          <ul>
+            <li style="color: white;">&nbsp;&nbsp;基隆市&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://www.klzz.klcg.gov.tw/">中正區</a></li>
+            <li style="color: white;">&nbsp;&nbsp;台北市&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://btdo.gov.taipei/">北投區</a></li>
+            <li style="color: white;">&nbsp;&nbsp;新北市&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://www.xizhi.ntpc.gov.tw/">汐止區</a>&nbsp;&nbsp;<a class="city1" href="https://www.ruifang.ntpc.gov.tw/">瑞芳區</a>&nbsp;&nbsp;<a class="city1" href="https://www.xindian.ntpc.gov.tw/content/?parent_id=10156">新店區</a>&nbsp;&nbsp;<a class="city1" href="https://www.wulai.ntpc.gov.tw/">烏來區</a>&nbsp;&nbsp;<a class="city1" href="https://www.yingge.ntpc.gov.tw/">鶯歌區</a></li>
+            <li style="color: white;">&nbsp;&nbsp;桃園市&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://www.daxi.tycg.gov.tw/">大溪區</a>&nbsp;&nbsp;<a class="city1" href="https://www.fuxing.tycg.gov.tw/">復興區</a></li>
+            <li style="color: white;">&nbsp;&nbsp;新竹市&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://dep-e-district.hccg.gov.tw/ch/index.jsp">東區</a>&nbsp;&nbsp;<a class="city1" href="https://dep-s-district.hccg.gov.tw/ch/index.jsp">香山區</a></li>
+            <li style="color: white;">&nbsp;&nbsp;新竹縣&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="http://www.guanxi.gov.tw/home.php">關西鎮</a>&nbsp;&nbsp;<a class="city1" href="http://www.hcwft.gov.tw/">五峰鄉</a>&nbsp;&nbsp;<a class="city1" href="http://www.hccst.gov.tw/home.php">尖石鄉</a></li>
+            <li style="color: white;">&nbsp;&nbsp;苗栗縣&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://www.nanchuang.gov.tw/default.aspx">南庄鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.stan.gov.tw/default.aspx">獅潭鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.taian.gov.tw/default.aspx">泰安鄉</a>&nbsp;&nbsp;<a class="city1" href="#">三義鄉</a></li>
+            <li style="color: white;">&nbsp;&nbsp;台中市&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://www.taiping.taichung.gov.tw/">太平區</a>&nbsp;&nbsp;<a class="city1" href="https://www.wufeng.taichung.gov.tw/">霧峰區</a>&nbsp;&nbsp;<a class="city1" href="https://www.heping.taichung.gov.tw/">和平區</a></li>
+            <li style="color: white;">&nbsp;&nbsp;南投縣&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://www.puli.gov.tw/">埔里鎮</a>&nbsp;&nbsp;<a class="city1" href="http://www.renai.gov.tw/">仁愛鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.yuchih.gov.tw/">魚池鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.shini.gov.tw/">信義鄉</a></li>
+            <li style="color: white;">&nbsp;&nbsp;嘉義縣&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://www.alishan.gov.tw/">阿里山鄉</a></li>
+            <li style="color: white;">&nbsp;&nbsp;台南市&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://web.tainan.gov.tw/ZuojhenDistrict/">左鎮區</a>&nbsp;&nbsp;<a class="city1" href="https://dongshan.tainan.gov.tw/">東山區</a></li>
+            <li style="color: white;">&nbsp;&nbsp;高雄市&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://kccdo.kcg.gov.tw/">前鎮區</a>&nbsp;&nbsp;<a class="city1" href="https://shanlin.kcg.gov.tw/">杉林區</a>&nbsp;&nbsp;<a class="city1" href="https://jiasian.kcg.gov.tw/">甲仙區</a>&nbsp;&nbsp;<a class="city1" href="https://tauyuan.kcg.gov.tw/">桃源區</a>&nbsp;&nbsp;<a class="city1" href="https://namasia.kcg.gov.tw/">那瑪夏區</a>&nbsp;&nbsp;<a class="city1" href="https://maolin.kcg.gov.tw/Content_List.aspx?n=85BA747CC078349D">茂林區</a></li>
+            <li style="color: white;">&nbsp;&nbsp;屏東縣&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/sandimen/Default.aspx">三地門鄉</a>&nbsp;&nbsp;<a class="city1" href="http://www.wutai.gov.tw/">霧台鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/townmjt/Default.aspx">瑪家鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/TownCgt/Default.aspx">長治鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/TownTto/Default.aspx">泰武鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/laiyi/Default.aspx">來義鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/Townsto/Default.aspx">新埤鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/Towncrt/Default.aspx">春日鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/townszt/Default.aspx">獅子鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/townmdt/Default.aspx">牡丹鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.pthg.gov.tw/townmto/Default.aspx">滿州鄉</a></li>
+            <li style="color: white;">&nbsp;&nbsp;台東縣&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="http://www.taitungcity.gov.tw/">台東市</a>&nbsp;&nbsp;<a class="city1" href="http://www.lanyu.gov.tw/home.php">蘭嶼鄉</a>&nbsp;&nbsp;<a class="city1" href="http://www.ttypg.gov.tw/">延平鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.beinan.gov.tw/">卑南鄉</a>&nbsp;&nbsp;<a class="city1" href="http://www.lyee.gov.tw/">鹿野鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.guanshan.gov.tw/">關山鎮</a>&nbsp;&nbsp;<a class="city1" href="https://www.haiduau.gov.tw/home/">海端鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.cs.gov.tw/home/">池上鄉</a>&nbsp;&nbsp;<a class="city1" href="http://www.donghe.gov.tw/home/">東河鄉</a>&nbsp;&nbsp;<a class="city1" href="http://www.changkang.gov.tw/home.php">成功鎮</a>&nbsp;&nbsp;<a class="city1" href="http://www.changbin.gov.tw/home.php">長濱鄉</a>&nbsp;&nbsp;<a class="city1" href="#">太麻里鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.ttjfng.gov.tw/home/">金峰鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.dwuu.gov.tw/">大武鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.ttdaren.gov.tw/home/">達仁鄉</a></li>
+            <li style="color: white;">&nbsp;&nbsp;花蓮縣&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="http://www.hualien.gov.tw/home.php">花蓮市</a>&nbsp;&nbsp;<a class="city1" href="http://www.sinchen.gov.tw/home.php">新城鄉</a>&nbsp;&nbsp;<a class="city1" href="http://www.shlin.gov.tw/tw/index.aspx">秀林鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.ji-an.gov.tw/">吉安鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.shoufeng.gov.tw/">壽豐鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.fonglin.gov.tw/">鳳林鎮</a>&nbsp;&nbsp;<a class="city1" href="https://www.guangfu.gov.tw/">光復鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.feng-bin.gov.tw/">豐濱鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.juisui.gov.tw/">瑞穗鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.wanrung.gov.tw/Default.aspx">萬榮鄉</a>&nbsp;&nbsp;<a class="city1" href="http://www.hlyl.gov.tw/home.php">玉里鎮</a>&nbsp;&nbsp;<a class="city1" href="#">卓溪鄉</a>&nbsp;&nbsp;<a class="city1" href="https://www.fuli.gov.tw/">富里鄉</a></li>
+            <li style="color: white;">&nbsp;&nbsp;宜蘭縣&nbsp;&nbsp;&nbsp;&nbsp;<a class="city1" href="http://www.datong.e-land.gov.tw/rwd/datong/html/index_01.aspx">大同鄉</a>&nbsp;&nbsp;<a class="city1" href="http://www.nanao.e-land.gov.tw/">南澳鄉</a></li>
+          </ul>
+        </div> 
+      
+      
+    </div>
+  </div>
+
+  <div class="container-fluid" style="margin-top:80px">
+    <table id="item-table2">
+      <tr>
+        <td><img src="../img/home/人物/噶瑪蘭族_人物.jpg" class="item-img"/><p>&emsp;&emsp;&emsp;&emsp;噶瑪蘭族</p></td>
+        <td><img src="../img/home/人物/太魯閣族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;太魯閣族</p></td>
+        <td><img src="../img/home/人物/卑南族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;卑南族</p></td>
+        <td><img src="../img/home/人物/魯凱族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;&emsp;魯凱族</p></td>
+        <td><img src="../img/home/人物/撒奇萊雅族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;撒奇萊雅族</p></td>
+        <td><img src="../img/home/人物/拉阿魯哇族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;拉阿魯哇族</p></td>
+        <td><img src="../img/home/人物/賽夏族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;&emsp;賽夏族</p></td>
+        <td><img src="../img/home/人物/卡那卡那富族_人物.jpg" class="item-img" /><p>&emsp;&emsp;&emsp;卡那卡那富族</p></td>
+      </tr>
+    </table>
+  </div>
+
+  <!--時間軸-->
+
+  <div class="container" style="margin-top:50px">
+    <h1>臺灣原住民年代表</h1>
+    <div class="col-md-12">
+      <br>
+      <h2>臺灣原住民族</h2>
+      <h5>&nbsp;&nbsp;&nbsp;&nbsp;在17世紀漢族移民移入前，原居於臺灣的民族，由定居在此的數十個語言及生活方式不同之族群所構成，屬於南島民族；
+          其中臺灣本島的所有民族為南島語系(臺灣南島語群)，蘭嶼上的達悟族則屬於南島語系(馬來-玻里尼西亞語族的巴丹語群)。
+          早期西方以「福爾摩沙」一詞稱呼臺灣，在部份文獻中又被稱為「福爾摩沙人」，意即「福爾摩沙島上的居民」。
+          目前僅16個民族為官方所承認，根據《原住民身份法》登記之戶口統計至少約57萬多人口（2019年11月），佔臺灣人口的2.38%。 
+          臺灣原住民族各族曾是臺灣的主體族群，但17世紀後受外來移民數量的擴張以致居住範圍受到排擠，治權領域逐漸縮小；
+          這些區域現今主要位於臺灣本島東部、西部山區以及蘭嶼，並由官方劃定為原住民族地區，簡稱原鄉，原住民族則享有自治權。
+          此外，原住民族長期以來因都市化而流入各大都會區，現今已有四成六人口設籍於都會區，部分區域之族人甚至認同其現居地為原鄉而形成部落。
+      </h5>
+  </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="VivaTimeline">
+          <dl>
+            <dt>舊石器時代</dt>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">距今6500~30000年前</div>
+              <div class="events">
+                <div class="events-header">長濱文化</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded " hight="100%" width="100%"
+                        src="../img/home/年代表/長濱文化.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      長濱文化是至今臺灣所發現最古老的文化，是一個以漁獵和採集為生的隊群社會，
+                      此一聚落的人口規模不大，主要居住在海邊的洞穴內及岩蔭下，
+                      不知農耕、畜牧，亦不會製陶，也不會冶煉鐵器，但已知用火，以敲打的方式製作石器，
+                      生活則靠狩獵和採集自然食物維生，
+                      目前發現的分布地點以台灣東南部沿海地帶及屏東縣恆春鎮鵝鑾鼻一帶。
+                      該文化由台大考古團隊於台東縣長濱鄉八仙洞發現，
+                      考古團隊在海蝕洞穴中進行了五次的探掘工作，發掘出不少舊石器晚期人類使用過的礫石器具，
+                      主要分布在四處洞穴（潮音洞、海雷洞、乾元洞及崑崙洞）底部。
+                      代表的遺址：台東八仙洞遺址、台東小馬海蝕洞遺址。
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/長濱文化石器.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      長濱文化的石片
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/八仙洞.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      「八仙洞」是舊石器時代長濱文化的發現地
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dt>新石器時代早期</dt>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">距今4500~6500年前</div>
+              <div class="events">
+                <div class="events-header">大坌坑文化</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/大坌坑文化.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      大坌坑文化是台灣新石器時代最早的文化，該文化廣泛分布於台灣全島各地以及廣東、福建的沿海地區。
+                      目前我們至少可以辨認出大坌坑文化的幾個次類型，包括北部的大坌坑類型，南部較早的八甲類型、較晚的鳳鼻頭類型，東部的月眉類型等。
+                      在大坌坑文化時期，其聚落還甚小，通常位於河口或近於海岸的階地、台地上，以狩獵和漁撈營生，也採集野生植物種子、果實和其纖維，
+                      可能已經有種植芋頭、薯類等根莖類作物的初級農業。
+                      從比較研究推測，這個文化的主人可能是南島語系民族的祖先，而台灣的原住民正是南島語族的一支，
+                      因此大坌坑文化可能是台灣原住民族的祖型文化，也可能是整個南島語系民族的祖先型文化。
+                      和這個文化相類似的史前文化，也出現在閩江口以南到雷州半島附近之間的大陸東南沿海地區。
+                      該文化與中國北方的「仰韶文化」同期。
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/大坌坑製陶.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      大坌坑文化人製作陶器模擬圖
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/大坌坑文化晚期的陶器和石器.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      台灣東部地區大坌坑文化晚期的陶器和石器（月眉遺址所出土）
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dt>新石器時代中期</dt>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">距今3500~4500年前</div>
+              <div class="events">
+                <div class="events-header">圓山文化、繩紋紅陶文化</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded " hight="100%" width="100%"
+                        src="../img/home/年代表/陶新石器時代中期素面陶彩陶.png" />
+                    </div>
+                    <div class="events-desc">
+                      這個時期的聚落較大，已是長期定居性質的聚落，農業頗為發達，但狩獵、漁撈的活動仍佔著重要地位。
+                      <br>
+                      1.圓山文化:
+                      <br>
+                      以臺北盆地北側為中心，具有許多外來移民文化特質。
+                      <br>
+                      2.繩紋紅陶文化
+                      <br>
+                      自大坌坑文化演化而來。
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/圓山貝塚.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      貝塚為該遺址或圓山文化的最大特色，保存大量食用後的貝殼、獸骨、魚骨及各類陶、石、骨角器，
+                      而其中貝殼種類有烏蜆、牡蠣、九孔螺、芋螺、榧螺、川蜷螺、千手螺、窗貝等等，這些種類多半屬於半淡半鹹水性的貝類，
+                      可驗證圓山時期臺北湖為一鹹淡水交雜湖泊。
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/打製磨製石器.gif" />
+                    </div>
+                    <div class="events-desc">
+                      新石器時代，在考古學上是石器時代的最後一個階段，以磨製石器和製作陶器為主。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dt>新石器時代晚期</dt>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">距今2000~3500年前</div>
+              <div class="events">
+                <div class="events-header">卑南文化、麒麟文化、靜浦文化</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/新石器時代晚期.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      就在這個時代，人類開始從事農業和畜牧，石器的製作也從打製變磨製，
+                      將植物的果實種子加以播種，並把野生動物馴服以供食用，人類不再只依賴大自然提供食物，
+                      因此其食物來源變得穩定，同時農業與畜牧的經營也使人類由逐水草而居變為定居下來，
+                      節省下更多的時間和精力，而人類亦已經能夠製作陶器、紡織，在這樣的基礎上，
+                      人類生活得到了更進一步的改善，開始關注文化事業的發展，使人類開始出現文字。
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/卑南文化.gif" />
+                    </div>
+                    <div class="events-desc">
+                      卑南文化的遺址範圍較臺灣多數史前文化遺址為大，像卑南遺址廣義的範圍約可達100公頃(100萬平方公尺)。
+                      遺址通常包含龐大的聚落，其建築物成排分布，格局嚴謹，已經是頗具組織的社會結構。
+                      在代表性遺址，卑南遺址所發現的文化內涵，生業型態以農業為主，斧鋤形器雖不多，但有大量的石刀，石鐮和去殼用的石杵，推測是種植小米和旱稻；
+                      此外狩獵工具的矛、簇也很多，但漁具就相當缺乏。生活用具的陶器以夾砂素麵紅陶為主，墓葬內有特別製作的陪葬用豎把罐。
+                      很可能有人專門從事玉石飾品製作，並以玉製器物來交易。
+                      有數以千計的蛇紋岩石板棺埋在建築物底部，成帶狀分布，而且與地上建築物的座向相同。
+                      棺內更有豐富又精美的陪葬玉器、陶器，可見當時人已有靈魂觀念，相信死後另有世界，並且有相沿成俗的喪葬儀禮。
+                      從玉器可看出，當時有階級之分。
+                      代表的遺址有台東縣境的卑南遺址、富山遺址、都蘭遺址、掃叭遺址、巴蘭遺址、花蓮縣境的公埔遺址等。
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/麒麟文化.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      麒麟文化是臺灣新石器時代晚期的文化之一，
+                      分布於花蓮縣新社到臺東縣都蘭之間的東海岸地區。
+                      生活型態以農業為重心，以山田燒墾方式種植穀類作物，由於農業技術進步，土地贍養力大增，因此人口增加很多。
+                      1926年由森丑之助辨認，鹿野忠雄在1929年稱其為「巨石文化」，但當時的巨石文化涵蓋了今天所稱的麒麟文化及卑南文化。
+                      1976年宋文薰提出將以臺東縣成功鎮麒麟遺址為代表的麒麟文化與以臺東市卑南遺址為代表的卑南文化分開的主張。
+                      目前學術界對於麒麟文化有兩種看法，一種認為麒麟文化是一種單一文化，另一說法則認為是卑南文化的地方性類型。  
+                      麒麟文化的聚落主要分布在海岸的臺地上，
+                      主要遺址有花蓮縣新社遺址、貓公遺址、富世遺址、Satokoay (舞鶴)遺址與臺東縣的泰源遺址、大馬第一遺址與都蘭遺址，
+                      而該文化的陶器以夾安山岩顆粒的紅色素麵陶為主，石器與卑南文化相似，此外該文化還有許多大型的單石、石輪、岩棺與石壁等巨大石造物。
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/靜浦文化.jpg"/>
+                    </div>
+                    <div class="events-desc">
+                      新石器時代晚期的靜浦文化，由於陶器的器型、種類和民族誌中記錄的阿美族陶器幾乎完全相同，
+                      而且遺址大多是阿美族傳說中的舊社址，考古學者已可確認是現生的原住民－－阿美族的祖先留下的文化。
+                      這個時代因為鐵器的使用，生產力大增，但受制於東部的地形，主要仍居住於縱谷內的台地，
+                      如謝德武台地、舞鶴台地，或仍居於海岸地區的海階，只有少部分人群移向中央山脈東側的山區。
+                      重要的遺址有靜浦、水璉、富南、小馬洞穴遺址上層等。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dt>金屬器時代</dt>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">距今400~2000年前</div>
+              <div class="events">
+                <div class="events-header">番仔園文化</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded " hight="100%" width="100%"
+                        src="../img/home/年代表/番仔園文化.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      番仔園文化屬於鐵器時代，分布於台灣中部，
+                      包括大肚台地、八卦台地與苗栗縣南部等地。其名稱來自台中市大甲區一帶的番仔園遺址。
+                      蕃仔園文化分為早期的番仔園類型和晚期的鹿寮類型，番仔園類型的年代距今1600年前，存續至距今800年前左右。
+                      在番仔園遺址、麻頭路遺址、龍泉村、清水中社、惠來遺址都有發現墓葬，葬式為俯身葬，有少數使用覆面陶之行為。
+                      石器的類型包括打製石鋤、磨製長方形帶孔石刀、馬鞍形石刀和凹石等，但以礫石片打製石刀為數最多，
+                      也最具特色。骨角器有骨鏃、骨錐和尖狀器等。番仔園遺址出土玻璃和瑪瑙珠，推測當時與東南亞民族有貿易行為。
+                      番仔園文化的遺址，通常都有貝塚出現，器物特徵以精緻的黑色與灰色陶器為主，紅褐色陶居次。
+                      黑灰陶上常見連續刺點紋、波浪狀櫛紋、圈點紋等；此外也有拍印的方格紋、回形紋或魚骨形紋。
+                      石器數量很少，以礫石片打製石刀、磨光的馬鞍形石刀、石槌等較常見。
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/史前整理.gif" />
+                    </div>
+                    <div class="events-desc">
+                      台灣的史前文化
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dt>荷西時期</dt>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">1629年</div>
+              <div class="events">
+                <div class="events-header">荷蘭傳教士 尤羅伯 以羅馬拼音 紀錄原住民語言<br>
+                  「新港語」漢籍文獻稱「紅毛字」</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-6 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/荷西時期1.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      尤羅伯為了傳教編有新港語、南路語字典。
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/荷西時期2.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      荷人以文字譯出平埔族語言以便傳教，文字則保障平埔族與漢人簽地契。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">1732年</div>
+              <div class="events">
+                <div class="events-header">大肚王國瓦解</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-6 pull-left">
+                      <img class="events-object img-responsive img-rounded " hight="100%" width="100%"
+                        src="../img/home/年代表/大肚王國.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      大肚王國，荷蘭人稱米達赫王國，是一個在臺灣中部由臺灣原住民的拍瀑拉族、巴布薩族、巴則海族、洪雅族和道卡斯族建立的跨部落聯盟。
+                      以荷蘭的觀點來說，「米達赫」是荷蘭當局員工大衛·萊特定義的一個擁有特殊政治地位的郡省地域。
+                      在鼎盛時期的領域範圍南端約到鹿港，北方則可至桃園以南之地。
+                      荷蘭時期的領域範圍主要在今天的臺中市，以及彰化縣北部和南投縣的一部分，
+                      其性質推測可能為一鬆散的部落聯盟，因為其政體無文字證據證明具有組織和有效率的統治形式。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dt>清領時期</dt>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">1874年</div>
+              <div class="events">
+                <div class="events-header">牡丹社事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/牡丹社事件.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      牡丹社事件是發生於1874年（清同治十三年，日本明治七年），日本以1871年八瑤灣事件殺害琉球人為由出兵攻打台灣南部原住民各部落的軍事行動，以及隨後中日兩國的外交折衝。
+                      在日本，這次事件被稱為「台灣出兵」或是「征台之役」。這起事件是日本自從明治維新以來首次對外用兵，也是中日兩國在近代史上第一次重要外交事件之一。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">1877年</div>
+              <div class="events">
+                <div class="events-header">大港口事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="events-desc">
+                      大港口事件（秀姑巒阿美語：Karawrawan a demak no Cepo'），
+                      或稱奇密社事件（秀姑巒阿美語：Karawrawan a demak no Kiwit），
+                      是在花蓮爆發的一次軍事衝突和政治事件，衝突雙方是大港口（Cepo'）與奇美（Kiwit）等阿美族（Amis）部落和大清帝國，
+                      是在1877年反抗大清帝國由「開山撫番」政策而起的軍事侵略，最後遭致清兵誘騙屠殺的事件。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">1878年</div>
+              <div class="events">
+                <div class="events-header">加禮宛事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="events-desc">
+                      加禮宛戰役（噶瑪蘭語：Lanas na Kabalaen）或稱達固湖灣事件（撒奇萊雅語：Takubuwa a kawaw），
+                      是臺灣原住民噶瑪蘭族（Kebalan）和撒奇萊雅族（Sakizaya）在1878年聯合反抗滿清統治的事件。
+                      該事件對於花蓮地區的族群分布影響極大，撒奇萊雅族及噶瑪蘭族在聯合抵抗清軍入侵的事件中幾乎滅絕，
+                      倖存的族人藏身在阿美族之中。同時，協助清軍的七腳川社一舉成為奇萊平原最大部落，直至七腳川事件後才式微。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+
+            <dt>日治時期</dt>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">1900年～1910年</div>
+              <div class="events">
+                <div class="events-header">大嵙崁事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/大嵙崁社事件.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      大嵙崁社事件，也稱作大嵙崁抗清事件或大嵙崁戰役，
+                      是台灣清領時期1886年～1892年之間，
+                      劉銘傳對原住民泰雅族大嵙崁群發動的一連串戰爭，
+                      戰場涵蓋新北市三峽區至桃園市復興區一帶。
+                      此外，1895年日本入主台灣，
+                      以「緩撫」政策繼承劉銘傳武力進攻的方式，
+                      進入大嵙崁群生活領域，開採樟腦。
+                      日本的「理蕃」比清季劉銘傳作法更現代化，
+                      系統化，如警察制度銜接漢隘勇，科技化管理等。
+                      先以1900年包圍封鎖泰雅族大嵙崁群。
+                      後1906年4月第五任台灣總督佐久間左馬太，
+                      標榜施政要點「理蕃」。上任後針對濁水溪以北的泰雅族，
+                      實施軍警並進的「隘勇線」前進戰爭。
+                      發生1906年梵梵山群發泰雅族聯合抗日戰爭。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">1902年</div>
+              <div class="events">
+                <div class="events-header">南庄事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/南庄事件.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      南庄事件發生於明治35（1902）年，
+                      以南庄南獅里興社（今苗栗縣南庄鄉蓬萊村）頭目日阿拐為首，
+                      與鄰近諸社及潛藏於諸社的本島人，與日本官方及軍隊發生的持續半年（7-12月）的衝突事件。
+                      南庄事件發生主因臺灣總督府為了取得竹苗山區的樟腦資源，樟腦開發權歸屬成了事件導火線，
+                      日人以武力強勢介入賽夏族既有傳統領域土地與資產，為日治初期日人與原住民族衝突的重要歷史事件。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">1910年～1913年</div>
+              <div class="events">
+                <div class="events-header">李崠山事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-8 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/李崠山事件.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      於日治時期1910年到1913年，共有三次隘勇線前進戰役李崠山事件，
+                      當時臺灣總督佐久間左馬太更親自坐鎮兩個月督戰。 
+                      李崠山位居當時原住民族勢力範圍， 
+                      宜蘭、臺北、桃園、新竹的中心地帶， 
+                      泰雅族稱之為Tapong，蕨類之意， 
+                      其最高點稱為Rubi，為草地或苔蘚類， 
+                      意指植被茂盛人跡罕至之意， 
+                      乃大漢溪中上游與油羅溪流域的分水嶺。
+                       李崠山地區乃泰雅族之傳統領域， 
+                       日治時期的內灣馬里闊丸社、卡澳灣社、後山馬里闊丸社及基那吉社等四大族群。 
+                       在臺灣總督府的施政中， 
+                       李崠山在交通、殖產政策與統治上，都位居中心地位。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">1900年～1907年</div>
+              <div class="events">
+                <div class="events-header">大豹社事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/大豹社事件.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      大豹社為清領時期至日治初期，
+                      大豹溪一帶（今新北市三峽區南部山區）為原住民泰雅族大嵙崁大豹社的居住地。
+                      1900年，總督府開放樟腦業者進入山地開採資源，大量業者進入部落領域，
+                      擁有豐富樟腦資源的泰雅族大嵙崁地區首當其衝。
+                      六月，鄰近大嵙崁樟腦製造地的大豹社因工人強姦部落婦女，引起族人反抗爆發衝突。
+                      八月，總督府派軍隊鎮壓，大豹社頭目瓦旦·燮促率領族人反對日人伐木製腦的「理蕃政策」，
+                      並收容抗日漢人義軍與日人展開抗日浴血戰，日軍因死傷慘重而停戰，對大豹社改採「嚴密監控、游擊出擊」的戰術。
+                      西元1906年戰敗，西元1921年左右，族人被日人逼迫集體遷居到桃園市復興區詩朗、志繼一帶，原本1000多位居民，僅剩25戶，是為大豹社事件。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">1908年～1909年</div>
+              <div class="events">
+                <div class="events-header">七腳川事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-8 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/七腳川事件紀念碑.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      七腳川事件（南勢阿美語：U micidekay a demak nu Cikasuan），為台灣日治時期發生於花蓮港支廳的原住民阿美族七腳川社（今花蓮縣吉安鄉）與日本警察衝突事件。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">1914年</div>
+              <div class="events">
+                <div class="events-header">太魯閣事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/太魯閣戰役.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      太魯閣戰役，太魯閣族稱為抗日戰爭（太魯閣語：Tmgjiyal mrata Nihung），
+                      日本帝國與太魯閣族之間的戰役，在1914年5月17日至8月28日發生於太魯閣地區的戰役，亦是二十世紀臺灣本島最大的一場戰役。
+                      日本帝國為徹底壓制臺灣生蕃建立其統治威信，並有效控制太魯閣地區龐大的自然資源，
+                      而主動展開討伐之有計畫的軍事行動，也是五年理蕃計畫中最受重視也是最後一場戰役，
+                      戰爭前的準備期長達二年，多次的探勘、觀測、地圖描繪周詳，五年理蕃計畫中，
+                      一場戰役動用的軍、警、人伕最多，運送補給線最長，軍需耗費也最多，作戰時間長達三個月的一場戰役，
+                      而被定義為「戰役」主因是:太魯閣討伐戰役軍費財源，是經日本明治天皇首肯經帝國議會通過，以及佐久間左馬太以總督之尊親征，
+                      可代表日本帝國征服東臺灣之歷史戰役。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">1914年～1933年</div>
+              <div class="events">
+                <div class="events-header">大分事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="events-desc">
+                      大分事件為臺灣日治時期的原住民族主要抗日事件之一，1915年5月17日由布農族發動，事發地點為花蓮港廳玉里郡大分駐在所（位於今花蓮縣卓溪鄉大分），其遺址現為玉山國家公園管理處臺灣黑熊研究中心的一部分。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">1930年</div>
+              <div class="events">
+                <div class="events-header">霧社事件</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-8 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/霧社事件.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      霧社事件（賽德克語：Mkuni Paran [mukuni ˈpaɾan] 、日語：霧社事件／むしゃじけん musha jiken）
+                      是臺灣在日治時期1930年（昭和5年）發生的原住民武裝抗日事件，地點位於今南投縣仁愛鄉霧社。
+                      事件起因是賽德克族原住民不滿日本統治當局長期以來苛虐暴政，而由馬赫坡社頭目莫那·魯道率領德克達亞群各部落聯合起事，
+                      襲擊由日方建立的樣板聚落霧社，趁霧社公學校舉行運動會時襲殺日本人。事發後立即遭日方調集軍警，以飛機、山炮、毒氣等武器強力鎮壓；
+                      而起事的賽德克族人雖在襲擊成功後即回撤備戰，但仍不敵日方的強大武力，身為起事領袖的莫那·魯道飲彈自盡，參與行動的各部落幾遭滅族，
+                      數百位族人在寧死不屈下集體自縊，餘生者則被日方強制遷至川中島（今南投縣仁愛鄉西北端的清流部落）集中居住與管理。
+                      該事件爆發震驚日本政府與國際社會，除了使臺灣總督府的理蕃政策遭到重大挑戰，並造成時任總督石塚英藏、總務長官人見次郎等高層官員引咎去職。
+                      霧社事件是臺灣人在日治時代最後一次武裝抗日行動（漢人在西來庵事件後已放棄武力鬥爭，改採社會運動模式）。
+                      雖然在1896年日本佔據至1920年間，臺灣原住民死士先後發動150餘次武裝抗日行動，但仍以日後發生的霧社事件最為慘烈。
+                      後世有不少作品紀念此事件，著名的有邱若龍的漫畫《霧社事件》、鄧相揚的小說《風中緋櫻》以及魏德聖執導的電影《賽德克·巴萊》。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dt>中華民國時期</dt>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">1947年</div>
+              <div class="events">
+                <div class="events-header">高山族改稱山地同胞</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-8 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/高山改山地.jpg" />
+                    </div>
+                    <div class="events-desc">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">1948年</div>
+              <div class="events">
+                <div class="events-header">禁用蕃族等名</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="events-desc">
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">1954年</div>
+              <div class="events">
+                <div class="events-header">九族中文名稱確定</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <video src="../img/home/年代表/9.mp4" controls hight="100%" width="100%"></video>
+                    </div>
+                    <div class="events-desc">
+                      九族:
+                      泰雅族、布農族、鄒族、賽夏族、排灣族、卑南族、阿美族、達悟族、魯凱族。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">1984年</div>
+              <div class="events">
+                <div class="events-header">原住民正名運動</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="events-desc">
+                      原住民正名運動是指臺灣原住民族向中華民國政府所提出的「正名」要求，
+                      其運動最早是由台灣原住民族權利促進會自1984年開始發起的「原住民族正名運動」。
+                      其中運動訴求除了要求修改過去基於中華民族的定義而稱之為「山地同胞」的用法外，
+                      還包括有恢復傳統人名使用以及恢復部落地方命名等。
+                      最後運動在1994年8月1日，經過國民大會修憲後再憲法增修條文終將具有貶義的「山胞」修正為「原住民」。
+                      1997年，進一步的將具有集體權屬性「原住民族」一詞寫進憲法裡。
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">1994年</div>
+              <div class="events">
+                <div class="events-header">山胞修正為原住民</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <video src="../img/home/年代表/原住民正名運動.mp4" controls hight="100%" width="100%"></video>
+                    </div>
+                    <div class="events-desc">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">2001年</div>
+              <div class="events">
+                <div class="events-header">邵族 正名</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/邵族.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">2002年</div>
+              <div class="events">
+                <div class="events-header">噶瑪蘭族 正名</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/噶瑪蘭族.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">2007年</div>
+              <div class="events">
+                <div class="events-header">撒奇萊雅族 正名</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/撒奇萊雅族.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">2008年</div>
+              <div class="events">
+                <div class="events-header">賽德克族 正名</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/賽德克族.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">2014年</div>
+              <div class="events">
+                <div class="events-header">拉阿魯哇族 卡那卡那富族 正名</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/拉阿魯哇族.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      拉阿魯哇族
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 pull-left">
+                      <img class="events-object img-responsive img-rounded" hight="100%" width="100%"
+                        src="../img/home/年代表/卡那卡那富族.jpg" />
+                    </div>
+                    <div class="events-desc">
+                      卡那卡那富族
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--地圖連結塊縮放-->
+  <script>
+    $(document).ready(function (e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+  </script>
+
+  <!--時間軸效果-->
+  <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.eeyellow.Timeline.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.VivaTimeline').vivaTimeline({
+        carousel: true,
+        carouselTime: 3000
+      });
+    });
+  </script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+  <!--頁尾-->
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    
+    <p>by 逢甲大學-109學年度上學期  Web 程式設計課程 team18</p>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+  <html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>金魚都能懂的這個網頁畫面怎麼切 : 旋轉拼接方塊</title>
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+        .one1{
+            left: 80px;
+            width:960px;
+            margin-top:100px ;
+            margin-left: 80px;
+            display:flex;
+        }
+        .one2{
+            left: 100px;
+            width:960px;
+            margin-left: 80px;
+            display:flex;
+
+        }
+        .two{
+            width:960px;
+            display:flex;
+        }
+        #oneone{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            margin: 0 30px -25px;
+            position: relative;
+        }
+        #twotwo{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            margin: 0 30px -25px;
+            position: relative;
+        }
+        li::before{
+            content: '';
+            position: absolute;
+            z-index:-1 ;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
+        }
+        .box1::before{background-color: #ccb38c;}
+        .box2::before{background-color: #ccb38c;}
+        .box3::before{background-color: #ccb38c;}
+        .box4::before{background-color: #ccb38c;}
+        .box5::before{background-color: #ccb38c;}
+        .box6::before{background-color:  #ffbf00;}
+        .box7::before{background-color:  #ffbf00;}
+        .box8::before{background-color:  #ffbf00;}
+        .box9::before{background-color:  #ffbf00;}
+        .box10::before{background-color:  #ffbf00;}
+        .box11::before{background-color:  #ffbf00;}
+        .box12::before{background-color: #a9a9a9;}
+        .box13::before{background-color: #a9a9a9;}
+        .box14::before{background-color: #a9a9a9;}
+        .box15::before{background-color: #a9a9a9;}
+        .box16::before{background-color: #a9a9a9;}
+        li:hover{
+            color:#fff;
+        }
+        li:hover::before{
+            background-color: #ff7300;
+        }
+	</style>
+</head>  
+<body>
+    <div>
+<ul class="one1">
+	<li id="oneone" class="box1">阿美族</li>
+	<li id="oneone" class="box2">泰雅族</li>
+	<li id="oneone" class="box3">排灣族</li>
+	<li id="oneone" class="box4">卑南族</li>
+	<li id="oneone" class="box5">魯凱族</li>
+</ul>
+<ul class="two">
+    <li id="twotwo" class="box6">鄒族</li>
+	<li id="twotwo" class="box7">賽夏族</li>
+	<li id="twotwo" class="box8">達悟族</li>
+    <li id="twotwo" class="box9">邵族</li>
+    <li id="twotwo" class="box10">噶瑪蘭族</li>
+    <li id="twotwo" class="box11">太魯閣族</li>
+</ul>
+<ul class="one2">
+    <li id="oneone" class="box12">太魯閣族</li>
+    <li id="oneone" class="box13">撒奇萊雅族</li>
+    <li id="oneone" class="box14">賽德克族</li>
+    <li id="oneone" class="box15">拉阿魯哇族</li>
+    <li id="oneone" class="box16">卡那卡那富族</li>
+</ul>
+</div>
+
+
+
+</body></html>

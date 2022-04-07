@@ -1,0 +1,609 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-tw">
+
+  <head>
+    <title>原住民資訊網</title>
+    <meta charset="utf-8">
+    <meta name="author" content="裴鼎軒, 李柏村, 吳佳琪">
+    <meta name="keywords" content="原住民文化介紹, 原住民年代表, 原住民小遊戲">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+   <style>
+.back-to-top {
+    display:none;
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+    text-decoration:none;
+    color:#ffffff;
+}
+      @import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+
+
+      .one1 {
+        left: 80px;
+        width: 960px;
+        margin-top: 50px;
+        margin-left: 380px;
+        display: flex;
+      }
+
+      .one2 {
+        left: 100px;
+        width: 960px;
+        margin-left: 380px;
+        display: flex;
+
+      }
+
+      .two {
+        width: 960px;
+        margin-left: 300px;
+        display: flex;
+      }
+
+      #oneone {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        margin: 0 30px -25px;
+        position: relative;
+      }
+
+      #twotwo {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        margin: 0 30px -25px;
+        position: relative;
+      }
+
+      li::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: rotate(45deg);
+      }
+
+      .box1::before,
+      .box2::before,
+      .box3::before,
+      .box4::before,
+      .box5::before {
+        background-color: #ccb38c;
+      }
+
+      .box6::before,
+      .box7::before,
+      .box8::before,
+      .box9::before,
+      .box10::before,
+      .box11::before {
+        background-color: #ffbf00;
+      }
+
+      .box12::before,
+      .box13::before,
+      .box14::before,
+      .box15::before,
+      .box16::before {
+        background-color: #a9a9a9;
+      }
+
+      #oneone:hover,
+      #twotwo:hover {
+        color: #fff;
+      }
+
+      #oneone:hover::before,
+      #twotwo:hover::before {
+        background-color: #ff7300;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+    
+
+      /*導航欄*/
+      #collapsibleNavbar1 li a:hover:not(.active) {
+        background-color: #555;
+        border-radius: 12px;
+      }
+
+      #collapsibleNavbar li a:hover:not(.active) {
+        background-color: #555;
+        border-radius: 12px;
+      }
+
+
+      @import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+
+      body {
+        font-family: 'cwTeXYen', sans-serif;
+      }
+
+      /*衣服*/
+      aside {
+        position: absolute;
+        top: 2%;
+        left: .5%;
+        width: 10%;
+        height: 20%;
+        z-index: 1;
+      }
+
+         /*輪播介紹*/
+/*先預設是隱藏*/
+.hide-in-phone1 {
+  display: none;
+}
+/*若寬度大於480px就顯示*/
+@media only screen and (min-width:480px) {
+  .hide-in-phone1 {
+    display: block;
+  }
+}
+
+.hide-in-phone2 {
+  visibility: visible;
+}
+
+@media only screen and (min-width:480px) {
+  .hide-in-phone2 {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/*輪播圖片*/
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+       
+
+      .col-12 {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .row1 {
+        margin-top: 20px;
+      }
+
+      #demo {
+        width: 860px;
+        margin: auto
+      }
+
+      #demo img {
+        width: 860px;
+        height: 600px;
+      }
+
+      .container {
+        width: 1200px;
+        display: flex;
+        padding: 5px 0;
+      }
+
+      .container h2 {
+        width: 300px;
+        text-align: right;
+        padding: 15px;
+        border-right: 3px solid #000000;
+      }
+
+      .container h2::after {
+        content: '';
+        display: block;
+        height: 4px;
+        width: 4px;
+        background-color: #000;
+        margin-left: auto;
+      }
+
+      .container .txt {
+        width: 800px;
+        padding: 15px;
+        column-count: 1;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <a href="#" class="back-to-top">TOP</a>
+  <script>
+  jQuery(document).ready(function() {
+  var offset = 220;
+  var duration = 500;
+  jQuery(window).scroll(function() {
+  if (jQuery(this).scrollTop() > offset) {
+  jQuery('.back-to-top').fadeIn(duration);
+  } else {
+  jQuery('.back-to-top').fadeOut(duration);
+  }
+  });
+  
+  jQuery('.back-to-top').click(function(event) {
+  event.preventDefault();
+  jQuery('html, body').animate({scrollTop: 0}, duration);
+  return false;
+  })
+  });
+  </script>
+<body>
+  <!--衣服-->
+  <aside>
+    <!--輪播-->
+    <div id="clothes" class="carousel slide hide-in-phone1" data-ride="carousel">
+      <!--圖片下方顯示:有多少輪播圖片&目前撥放位置-->
+      <ul class="carousel-indicators">
+        <li data-target="#clothes" data-slide-to="0" class="active"></li>
+        <li data-target="#clothes" data-slide-to="1"></li>
+        <li data-target="#clothes" data-slide-to="2"></li>
+        <li data-target="#clothes" data-slide-to="3"></li>
+        <li data-target="#clothes" data-slide-to="4"></li>
+        <li data-target="#clothes" data-slide-to="5"></li>
+        <li data-target="#clothes" data-slide-to="6"></li>
+        <li data-target="#clothes" data-slide-to="7"></li>
+        <li data-target="#clothes" data-slide-to="8"></li>
+        <li data-target="#clothes" data-slide-to="9"></li>
+        <li data-target="#clothes" data-slide-to="10"></li>
+        <li data-target="#clothes" data-slide-to="11"></li>
+        <li data-target="#clothes" data-slide-to="12"></li>
+        <li data-target="#clothes" data-slide-to="13"></li>
+        <li data-target="#clothes" data-slide-to="14"></li>
+        <li data-target="#clothes" data-slide-to="15"></li>
+      </ul>
+      <!--圖片&圖片標題-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../img/home/人物/阿美_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>阿美</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/泰雅族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>泰雅族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/排灣族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>排灣族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/布農族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>布農族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/雅美族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>雅美族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/鄒族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>鄒族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/邵族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>邵族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/賽德克族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>賽德克族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/噶瑪蘭族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>噶瑪蘭族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/太魯閣族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>太魯閣族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/卑南族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>卑南族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/魯凱族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>魯凱族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/撒奇萊雅族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>撒奇萊雅族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/拉阿魯哇族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>拉阿魯哇族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/賽夏族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>賽夏族</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/home/人物/卡那卡那富族_人物.jpg" class="rounded-circle img-thumbnail">
+          <div class="carousel-caption" style="color: rgb(121, 0, 50); font-weight: bold;">
+            <p>卡那卡那富族</p>
+          </div>
+        </div>
+        <!--左右控制-->
+        <a class="carousel-control-prev clothes" href="#clothes" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next clothes" href="#clothes" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 導覽區塊 -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand  hide-in-phone2" style="font-weight: bold; font-size: 20px" href="#">原住民資訊網</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar1">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../../html/introducehome.html">
+            <div class="text-white" style="font-size: 20px">原住民文化</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../html/home.html">
+            <div class="text-white" style="font-size: 20px">文化年表</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../database/login.php">
+            <div class="text-white" style="font-size: 20px">小遊戲</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <h1 style="text-align: center ;margin-top:30px">原住民族文化介紹</h1>
+  </div>
+  <!--旋轉方塊-->
+  <div>
+    <ul class="one1">
+      <a style="color:#000000;" href="../16/Ami.html">
+        <li id="oneone" class="box1">阿美族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Atayal.html">
+        <li id="oneone" class="box2">泰雅族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Paiwan.html">
+        <li id="oneone" class="box3">排灣族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Puyuma.html">
+        <li id="oneone" class="box4">卑南族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Rukai.html">
+        <li id="oneone" class="box5">魯凱族</li>
+      </a>
+    </ul>
+    <ul class="two">
+      <a style="color:#000000;" href="../16/Tsou.html">
+        <li id="twotwo" class="box6">鄒族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Saixia.html">
+        <li id="twotwo" class="box7">賽夏族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Yami.html">
+        <li id="twotwo" class="box8">達悟族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Thao.html">
+        <li id="twotwo" class="box9">邵族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Kavalan.html">
+        <li id="twotwo" class="box10">噶瑪蘭族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Bunun.html">
+        <li id="twotwo" class="box11">布農族</li>
+      </a>
+    </ul>
+    <ul class="one2">
+      <a style="color:#000000;" href="../16/Taroko.html">
+        <li id="oneone" class="box12">太魯閣族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Sakizaya.html">
+        <li id="oneone" class="box13">撒奇萊雅族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Seediq.html">
+        <li id="oneone" class="box14">賽德克族</li>
+      </a>
+      <a style="color:#000000;" href="../16/La Aluwa.html">
+        <li id="oneone" class="box15">拉阿魯哇族</li>
+      </a>
+      <a style="color:#000000;" href="../16/Kanakanafu.html">
+        <li id="oneone" class="box16">卡那卡那富族</li>
+      </a>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <!--輪播-->
+  </div>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../img/introduce/原住民介紹資料與圖片/賽夏族/1賽夏族 矮靈祭.jpg">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../img/introduce/原住民介紹資料與圖片/賽夏族/2賽夏族 臀鈴.jpg">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../img/introduce/原住民介紹資料與圖片/賽夏族/3賽夏族 祖靈祭.jpg">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!--文字-->
+  <div>
+    <h1 style="text-align: center;">賽夏族文化介紹</h1>
+  </div>
+  <div class="wrap">
+    <div class="container">
+      <h2>簡介</h2>
+      <div class="txt">
+        <p>
+          賽夏族的社會以氏族為基礎，各姓氏從清領時代開始就有不同漢姓，並遵守社會與婚姻規範。賽夏族的信仰與祭典中，以祖靈與矮靈信仰為主，以巴斯達隘矮靈祭典最具知名度。現今總人口約有6
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>人口分布</h2>
+      <div class="txt">
+        <p>賽夏族分布在臺灣西北部，以鵝公髻山為界分屬於新竹縣與苗栗縣兩個行政區。<br>
+          新竹縣境內的賽夏族人，居住在五峰鄉上坪溪流域，部落在五峰鄉大隘村與花園村內；新竹縣境內的賽夏族，部落周圍有不少泰雅族部落，文化上也彼此影響。<br>
+          苗栗縣境內的賽夏族人，居住在中港溪上游的南庄鄉東河、南河流域，以及後龍溪上游獅潭溪流域，部落集中在南庄鄉東河村、蓬萊村、南江村，以及獅潭鄉百壽村等村落內。<br>
+          苗栗縣境內的賽夏族部落，周圍多為客家漢族社區，生活中吸收不少客族文化。<br>
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>社會</h2>
+      <div class="txt">
+        <h3>部落</h3>
+        <p>由鄰近村落組成，部落領袖由部落中具有能力、溝通、公正、熱心等特質的族人擔任。部落內的公共事務，則由各氏族長老會議共同討論決定，之後交由部落領袖執行。
+        </p>
+        <h3>婚姻</h3>
+        <p>
+          賽夏族的家庭制度為從夫居的父系制，居住方式為大家庭式，家庭中以男性長輩為尊。婚姻為一夫一妻制度，日本殖民統治時期以前流行交換婚，通婚雙方家庭讓女兒互換為婚配對象，並且重視氏族組織與關係，同氏族、聯族之間不得通婚。
+        <h3>部落</h3>
+        <p>由鄰近村落組成，部落領袖由部落中具有能力、溝通、公正、熱心等特質的族人擔任。部落內的公共事務，則由各氏族長老會議共同討論決定，之後交由部落領袖執行。 </p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>產業</h2>
+      <div class="txt">
+        <p>有農業生產與狩獵活動兩方面。農業方面主要種植小米、旱稻、甘薯與芋頭；狩獵生產方面，以山豬肉等為肉類食品來源。
+          狩獵是屬於男子的工作，男子要狩獵捕獲野生動物才能算是成年人，當男子陸續獵獲六頭（有些部落獵獲五頭）長出獠牙的公山豬（walisane）後，才可享有象徵獵人勇士榮譽的百合花配戴資格。 </p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>服飾</h2>
+      <div class="txt">
+        <p>以麻為主要材料，經過剝皮、抽絲、紡線、框線、漂染、整經等程序，成為麻布後，再縫接為服裝，與西部漢族交換貿易後開始以棉布取代麻布。常用白、紅、黑三色，以白色為底、紅色為圖樣、黑色為點綴用色。
+          分為日常服裝與儀式慶典服裝，日常服裝多半是素色麻布衣，盛裝時穿有幾何花紋圖樣的服裝，再搭配上各種裝飾品。
+        </p>
+        <h3>臀鈴</h3>
+        <p>巴斯達隘時所用的臀鈴（又稱為背響）與舞帽（又稱月光旗），是賽夏族最具特色的祭典物品。
+          臀鈴多數都是三角形，以布條或綁帶跨過雙肩後綁於背後，讓下擺垂吊飾物配合舞步移動，發出叮叮咚咚的聲響。</p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>建築</h2>
+      <div class="txt">
+        <p>
+          賽夏族的家屋建築，竹子是重要的材料，柱子使用粗竹，牆壁用竹子搭成，屋頂以竹片或茅草覆蓋。
+火塘具有重要意義，位於住屋正室入口中央，或者在左側立上三塊石頭，家人在此聚集取暖、炊煮食物，床則是在角落靠牆。
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>祭典</h2>
+      <div class="txt">
+        <h3>矮靈祭</h3>
+        <p>傳說賽夏族與達隘族（矮人）相鄰而居，向達隘學習農耕、醫學、歌舞、祭祀等文化，因此每當舉行豐收慶典時都會邀請達隘共同參與，以感謝達隘的恩惠，達隘卻常調戲賽夏婦女，觸怒賽夏族人，於是設計報復殺害達隘。賽夏族人受到存活下來的達隘人詛咒，因此年年舉辦祭典，弔念、安撫達隘靈魂，並祈求矮靈不再降禍給族人。
+          每兩年舉行一次小祭典，每十年舉行一次大祭典，並分為南、北兩個祭團舉行。
+          巴斯達隘因為達隘傳說而顯的神秘，受到族人與社會大眾的重視，可以說是賽夏族最知名的祭典。</p>
+        <h3>祖靈祭</h3>
+        <p>分為春季與秋季兩次，春季在農曆6 月間稻米播種後、秋季在農曆11 月作物收成時，目的是祭祀氏族中過世的祖先，由各姓氏的父系血緣親族參與。
+        </p>
+      </div>
+    </div>
+  </div>
+<!--頁尾-->
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    
+    <p>by 逢甲大學-109學年度上學期  Web 程式設計課程 team18</p>
+  </div>
+
+
+
+</body>
+
+</html>
